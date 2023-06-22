@@ -1,0 +1,56 @@
+﻿@using People.MvcUi.Models
+@model PersonUpdateModel
+@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Update Page";
+}
+
+<div class="container">
+	<h1>Update @Model.Name.FirstName @Model.Name.LastName </h1>
+	<section>
+		<form id="person-form" asp-controller="Home" asp-action="Create" method="post">
+			@Html.AntiForgeryToken()
+			<fieldset>
+				<div class="row">
+					<div class="form-group">
+						<label class="form-label" asp-for="Name.FirstName">First Name</label>
+						<input class="form-control form-text" type="text" name="Name.FirstName" value="@Model.Name.FirstName" required />
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<label class="form-label" asp-for="Name.LastName">Last Name</label>
+						<input class="form-control form-text" type="text" name="Name.LastName" value="@Model.Name.LastName" required />
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="row">
+					<div class="form-group">
+						<label class="form-label" asp-for="Contact.Phone">Phone</label>
+						<input class="form-control form-text" type="tel" name="Contact.Phone" value="@Model.Contact.Phone" required />
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<label class="form-label" asp-for="Contact.Address">Address</label>
+						<input class="form-control form-text" type="text" name="Contact.Address" value="@Model.Contact.Address" required />
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<label class="form-label" asp-for="Contact.Email">Email</label>
+						<input class="form-control" type="email" name="Contact.Email" value="@Model.Contact.Email" required />
+					</div>
+				</div>
+			</fieldset>
+			<div class="row">
+				<div class="form-group">
+					<div class="d-grid col-8 mx-auto p-2">
+						<input id="submit-added-person" type="submit" class="btn btn-success" />
+					</div>
+				</div>
+			</div>
+		</form>
+	</section>
+</div>

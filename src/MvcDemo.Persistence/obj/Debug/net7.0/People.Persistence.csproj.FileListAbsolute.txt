@@ -1,0 +1,17 @@
+E:\PeopleAppMvcDemo\src\People.Persistence\bin\Debug\net7.0\People.Persistence.deps.json
+E:\PeopleAppMvcDemo\src\People.Persistence\bin\Debug\net7.0\People.Persistence.runtimeconfig.json
+E:\PeopleAppMvcDemo\src\People.Persistence\bin\Debug\net7.0\People.Persistence.dll
+E:\PeopleAppMvcDemo\src\People.Persistence\bin\Debug\net7.0\People.Persistence.pdb
+E:\PeopleAppMvcDemo\src\People.Persistence\bin\Debug\net7.0\People.Domain.dll
+E:\PeopleAppMvcDemo\src\People.Persistence\bin\Debug\net7.0\People.Domain.pdb
+E:\PeopleAppMvcDemo\src\People.Persistence\obj\Debug\net7.0\People.Persistence.csproj.AssemblyReference.cache
+E:\PeopleAppMvcDemo\src\People.Persistence\obj\Debug\net7.0\People.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+E:\PeopleAppMvcDemo\src\People.Persistence\obj\Debug\net7.0\People.Persistence.AssemblyInfoInputs.cache
+E:\PeopleAppMvcDemo\src\People.Persistence\obj\Debug\net7.0\People.Persistence.AssemblyInfo.cs
+E:\PeopleAppMvcDemo\src\People.Persistence\obj\Debug\net7.0\People.Persistence.csproj.CoreCompileInputs.cache
+E:\PeopleAppMvcDemo\src\People.Persistence\obj\Debug\net7.0\People.Persistence.csproj.CopyComplete
+E:\PeopleAppMvcDemo\src\People.Persistence\obj\Debug\net7.0\People.Persistence.dll
+E:\PeopleAppMvcDemo\src\People.Persistence\obj\Debug\net7.0\refint\People.Persistence.dll
+E:\PeopleAppMvcDemo\src\People.Persistence\obj\Debug\net7.0\People.Persistence.pdb
+E:\PeopleAppMvcDemo\src\People.Persistence\obj\Debug\net7.0\People.Persistence.genruntimeconfig.cache
+E:\PeopleAppMvcDemo\src\People.Persistence\obj\Debug\net7.0\ref\People.Persistence.dll

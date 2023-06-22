@@ -1,0 +1,48 @@
+﻿@inject People.Persistence.Services.IPeopleServices services
+@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Student's Data";
+}
+@section Style
+{
+	<link defer rel="stylesheet" href="~/lib/datatables.net-bs5/dataTables.bootstrap5.css" />
+}
+
+<div class="container-md mt-3 bg-transparent">
+	<h1 class="text-center bg-primary text-white">Student's Data</h1>
+	<section class="table-responsive-md">
+		<a id="add-new-student" target="_blank" href='/Home/Create' class="btn btn-primary m-2">Add New</a>
+		<table id="student-info" class="table table-striped table-hover table-sm">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Address</th>
+					<th>Email</th>
+					<th>Phone</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var p in await services.GetAllAsync())
+				{
+					<tr>
+						<td>@p.Name.FirstName @p.Name.LastName</td>
+						<td>@p.ContactInfo.Address</td>
+						<td>@p.ContactInfo.Email</td>
+						<td>@p.ContactInfo.Phone</td>
+						<td>
+							<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+								<div class="btn-group me-2" role="group" aria-label="First group">
+									<a href='/Home/Update/@p.Id' class='btn btn-secondary'>Edit</a>
+								</div>
+								<div class="btn-group me-2" role="group" aria-label="First group">
+									<a href='/Home/Delete/@p.Id' class='btn btn-danger'>Delete</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</section>
+</div>
